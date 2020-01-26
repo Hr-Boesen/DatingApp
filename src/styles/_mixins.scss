@@ -1,0 +1,22 @@
+@mixin flexCenter() {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+@mixin buttonSize($ekstra) {
+
+    @media (min-width: 319px) {
+        font-size: .5rem + $ekstra;
+    }
+    @media (min-width: 374px) {
+        font-size: .6rem + $ekstra;
+    }
+    @media (min-width: 768px) {
+        font-size: .82rem + $ekstra;
+    }
+    @media (min-width: 1024px) {
+        font-size: 1.1rem + $ekstra;
+    }
+}
