@@ -1,106 +1,31 @@
 <template>
-  <div class="Test">
-    <div class="wrapper">
-      <div class="box1"></div>
-      <div class="box2"></div>
-      <div class="box3"></div>
-      <div class="box4"></div>
-       <div class="box5"> </div>
-  <div class="box6"> </div>
-   <div class="box7"> </div>
+    <div class="Test">
+        <div class="wrapper">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+            <div class="box5"></div>
+            <div class="box6"></div>
+            <div class="box7"></div>
+        </div>
     </div>
-    
-  </div>
 </template>
 
 <script>
 export default {
-  name: "Test",
-  data() {
-    return {};
-  },
-  methods: {
-    tagEtFoto() {
-      console.log("Tag et foto");
-    }
-  },
-  created() {}
+    name: "Test",
+
+    data() {
+        return {};
+    },
+
+    methods: {
+        tagEtFoto() {
+            console.log("Tag et foto");
+        }
+    },
+
+    created() {}
 };
 </script>
-
-<style>
-
-.Test .wrapper {
-
-  width: 80vw;
-  height: 30vw;
-  position: relative;
-  margin: 0 auto;
-}
-.Test .box1 {
-  height: 1.3rem;
-
-  width: 17.8vw;
-  height: 3.27vh;
-  margin-top: 2vh;
-  margin-left: 9vw;
-  position: absolute;
-  background: #F4F1F1;
- 
-}
-.Test .box2 {
-
-
-  width: 30vw;
-  height: 2.6vh;
-  margin-top:6vh;
-  margin-left: 2vw;
-  position: absolute;
-  background: #F4F1F1;
-}
-.Test .box3 {
-  width: 24vw;
-  height: 2.8vh;
-  margin-top: 9.2vh;
-  margin-left: 7.6vw;
-    position: absolute;
-    background: #F4F1F1;
- 
-}
-.Test .box4 {
-  width: 18vw;
-  height: 2.9vw;
-  margin-top: 12.9vh;
-  margin-left: 21vw;
-   position: absolute;
-   background: #F4F1F1;
-}
-.Test .box5 {
-
-  width: 31.5vw;
-  height: 2.4vh;
-  margin-top: 2.2vh;
-  margin-left: 43vw;
-  background: #F4F1F1;
-  position: absolute;
-}
-.Test .box6 {
-  
-  width: 41.5vw;
-  height: 4.4vh;
-  margin-top: 5.2vh;
-  margin-left: 33vw;
-  background: #F4F1F1;
-  position: absolute;
-}
-.Test .box7 {
-  
-  width: 33vw;
-  height: 2.4vh;
-  margin-top: 10vh;
-  margin-left: 35vw;
-  background: #F4F1F1;
-  position: absolute;
-}
-
-</style>

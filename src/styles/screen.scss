@@ -7,7 +7,16 @@
 @import './mixins';
 
 // UI
+@import './ui/container';
 @import './ui/typography';
 @import './ui/button.scss';
 
 // Components
+@import './components/screen';
+@import './components/login';
+@import './components/profile';
+@import './components/create-profile';
+@import './components/test';
+@import './components/tag-photo';
+@import './components/slider';
+@import './components/hvad';

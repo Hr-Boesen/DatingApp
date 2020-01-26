@@ -2,5 +2,29 @@
 
 .button {
     display: inline-block;
+    margin: 0 auto;
+    padding: 10px 7px;
+    border: 0 solid transparent;
+    border-radius: 7px;
+    font-family: $font-family-base;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-decoration: none;
+    text-align: center;
     cursor: pointer;
+}
+
+.button-block {
+    display: block;
+}
+
+.button-facebook {
+    background-color: #7D95CF;
+    color: white;
+}
+
+.button-google {
+    background-color: #C37573;
+    color: white;
 }
