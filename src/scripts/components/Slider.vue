@@ -44,7 +44,7 @@
 
 <style lang="scss">
 
-   @import "./src/styles/main.scss";
+   @import "../../styles/screen.scss";
 
    .slider {
      width: 100vw;

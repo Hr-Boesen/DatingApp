@@ -31,7 +31,7 @@
 </script>
 
 <style lang="scss">
-@import "./src/styles/main.scss";
+@import "../../styles/screen.scss";
 
   .tagFoto {
     width: 100vw;
