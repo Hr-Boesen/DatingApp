@@ -1,6 +1,5 @@
 <template>
     <div class="HvadLederDuEfter">
-        <div class="screen-iphone5">
             <div class="headline-hej"> HEJ! </div>
     
             <div class="headline-bruger-navn">
@@ -27,8 +26,6 @@
             <div class="btn-center-btn-gaa-til-din-profil">
                 <div @click="goToProfile" class="btn-gaa-til-din-profil">GÅ TIL DIN PROFIL</div>
             </div>
-    
-        </div>
     </div>
 </template>
 
