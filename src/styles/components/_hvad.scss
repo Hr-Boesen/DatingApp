@@ -1,10 +1,8 @@
-    .HvadLederDuEfter .screen-iphone5 {
-        width: 320px;
-        height: 568px;
-        margin: 0 auto;
-    }
+ 
      
-    .HvadLederDuEfter .headline-hej {
+    .HvadLederDuEfter {
+    
+    .headline-hej {
         font-family: "Montserrat";
         font-size: 50px;
         font-weight: 700;
@@ -13,26 +11,26 @@
         margin-top: 100px;
     }
      
-    .HvadLederDuEfter .headline-bruger-navn {
+    .headline-bruger-navn {
         text-align: center;
         margin-top: 30px;
         margin-bottom: 15px;
     }
      
-    .HvadLederDuEfter .headline-bruger-alder {
+     .headline-bruger-alder {
         text-align: center;
         margin-bottom: 30px;
     }
      
-    .HvadLederDuEfter .big-width {
+    .big-width {
         max-width: 250px;
     }
      
-    .HvadLederDuEfter .small-width {
+    .small-width {
         max-width: 90px;
     }
      
-    .HvadLederDuEfter input {
+    input {
         font-family: 'Montserrat';
         font-weight: 600;
         font-size: 30px;
@@ -46,16 +44,16 @@
         box-shadow: inset 0 0 0px rgba(0, 0, 0, 0), 0 0 0px rgba(0, 0, 0, 0);
     }
      
-    .HvadLederDuEfter .btn-wrapper {
+    .btn-wrapper {
         margin: auto;
         width: 306px;
     }
      
-    .HvadLederDuEfter a {
+    a{
         text-decoration: none;
     }
      
-    .HvadLederDuEfter .btn-leder-efter-en {
+   .btn-leder-efter-en {
         font-family: 'Montserrat';
         font-weight: 700;
         font-size: 10px;
@@ -69,12 +67,12 @@
         padding: 11px 13px;
     }
      
-    .HvadLederDuEfter .btn-leder-efter-en-selected {
+     .btn-leder-efter-en-selected {
         background-color: #D67AD3;
         background-image: linear-gradient(#D67AD3, #9769D4);
     }
     
-    .HvadLederDuEfter .btn-gaa-til-din-profil {
+  .btn-gaa-til-din-profil {
         font-family: 'Montserrat';
         font-weight: 700;
         font-size: 17px;
@@ -92,7 +90,7 @@
         position: relative;
     }
     
-    .HvadLederDuEfter .btn-gaa-til-din-profil::after {
+    .btn-gaa-til-din-profil::after {
         position: absolute;
         top: -4px;
         bottom: -4px;
@@ -105,16 +103,16 @@
         box-shadow: 0 8px 10px rgba(0, 0, 0, .2);
     }
     
-    .HvadLederDuEfter .btn-center-btn-gaa-til-din-profil {
+   .btn-center-btn-gaa-til-din-profil {
         margin: 0 auto;
         width: 284px;
     }
     
-    .HvadLederDuEfter .fa-cog {
+    .fa-cog {
         color: white;
     }
     
-    .HvadLederDuEfter .edit-box {
+    .edit-box {
         border-radius: 15px;
         overflow: hidden;
         width: 30px;
@@ -124,3 +122,5 @@
         top: -10px;
         position: relative;
     } 
+
+}
