@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="create-cloud-wrapper">
-            <router-link :to="{name: 'Slider'}">
+            <router-link :to="{name:'Slider'}">
                 <span class="btn-lav-sky">
                     <i class='fas fa-pen fa-cog'> </i> LAV DIN SKY
                 </span>
