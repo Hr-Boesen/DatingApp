@@ -1,11 +1,11 @@
 <template>
-    <div class="tagFoto">
-        <router-link :to="{name: 'Profil'}">
-            <span class="tilbageKnap">
+    <div class="take-a-photo">
+        <router-link :to="{name: 'Profile'}">
+            <span class="btn-back">
                 <i class="fas fa-arrow-left"></i> TILBAGE
             </span>
         </router-link>
-        <div class="tag-foto-div">
+        <div class="take-a-photo-div">
             Tag foto her!
         </div>
     </div>
@@ -13,7 +13,7 @@
 
 <script>
   export default {
-    name: 'TagFoto',
+    name: 'TakeAFoto',
     data() {
         return {
     

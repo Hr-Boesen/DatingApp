@@ -3,38 +3,38 @@
         <h1 class="screen_title">
             {{ name }}
         </h1>
-        <div class="tag-et-foto-wrapper">
-            <div class="tag-et-foto-inner-wrapper">
-            <router-link :to="{name: 'TagFoto'}">
-                <span class="btn-tag-foto-lav-sky">
+        <div class="take-a-photo-wrapper">
+            <div class="take-a-photo-inner-wrapper">
+            <router-link :to="{name: 'TakeAFoto'}">
+                <span class="btn-take-a-photo">
                     <i class='fas fa-pen fa-cog'> </i> TAG ET FOTO
                 </span>
             </router-link>
             </div>
         </div>
-        <div class="lav-sky-wrapper">
+        <div class="create-cloud-wrapper">
             <router-link :to="{name: 'Slider'}">
                 <span class="btn-lav-sky">
                     <i class='fas fa-pen fa-cog'> </i> LAV DIN SKY
                 </span>
             </router-link>
-            <div class="sky1"></div>
-            <div class="sky2"></div>
-            <div class="sky3"></div>
-            <div class="sky4"></div>
-            <div class="sky5"></div>
-            <div class="sky6"></div>
-            <div class="sky7"></div>
+            <div class="cloud1"></div>
+            <div class="cloud2"></div>
+            <div class="cloud3"></div>
+            <div class="cloud4"></div>
+            <div class="cloud5"></div>
+            <div class="cloud6"></div>
+            <div class="cloud7"></div>
         </div>
-        <div class="profil-procent-oversigt">
-            <div class="profil-procent-overskrift">
+        <div class="profile-percentage-overview ">
+            <div class="profile-percentage-title">
                 DIN PROFIL ER 20% FÆRDIG
             </div>
-            <div class="profil-procent-grafik">
-                <div class="profil-procent-grafik-bar">
+            <div class="profile-percentage-graphics">
+                <div class="profile-procentage-graphics-bar">
                 </div>
             </div>
-            <div class="profil-procent-tilgaengelig">
+            <div class="profile-percentage-not-public-yet">
                 DEN ER DERFOR IKKE OFFENTLIG ENDNU
             </div>
         </div>

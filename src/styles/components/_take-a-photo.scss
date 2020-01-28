@@ -1,13 +1,13 @@
 
 
-.tagFoto {
+.take-a-photo {
     width: 100%;
     min-height: 100vh;
     background-color: #D67AD3;
     background-image: linear-gradient(#D67AD3, #9769D4);
     position: relative;
   
-    .tilbageKnap {
+    .btn-back {
         font-family: 'Montserrat';
         font-weight: 700;
         @include buttonSize(.2);
@@ -21,7 +21,7 @@
         position: absolute;
     }
 
-    .tag-foto-div{
+    .take-a-photo-div{
         @include flexCenter();
         color: white;
         font-family: 'Montserrat';

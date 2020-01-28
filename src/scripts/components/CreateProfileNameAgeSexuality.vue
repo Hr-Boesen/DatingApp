@@ -1,34 +1,25 @@
 <template>
-    <div class="screen create">
+    <div class="screen create-profile">
         <h1 class="screen_title">HEJ!</h1>
-        
-        <div class="item2">
-            <div class="wrapper-navn-alder">
-                <div class="headline-bruger-navn">
+                <div class="headline-user-name">
                     <input id="inputFieldName" ref="inputFieldName" v-on:focus="changeNameFocus" v-model="name" v-bind:class="{'big-width': bigWidth, 'small-width': smallWidth}" type="text" placeholder="Navn">
                     <button @click="changeNameFocusWithBtn" class='edit-box'> 
                         <i class='fas fa-pen fa-cog'> </i>
                     </button>
                 </div>
-                <div class="headline-bruger-alder">
+                <div class="headline-user-age">
                     <input id="inputFieldAge" ref="inputFieldAge" v-on:focus="changeNameFocus" v-model="age" v-bind:class="{'big-width': bigWidth, 'small-width': smallWidth}" type="text" placeholder="Alder">
                     <button @click="changeAgeFocusWithBtn" class='edit-box'> 
                         <i class='fas fa-pen fa-cog'> </i>
                     </button>
                 </div>
+            <div class="btn-looking-for-partner" v-bind:class="{'btn-looking-for-partner-selected': selected1}" @click="selectWhatYouAreLookingFor(1)">EN HUN DER LEDER EFTER EN HAN</div>
+            <div class="btn-looking-for-partner" v-bind:class="{'btn-looking-for-partner-selected': selected2}" @click="selectWhatYouAreLookingFor(2)">EN HUN DER LEDER EFTER EN HUN</div>
+            <div class="btn-looking-for-partner" v-bind:class="{'bbtn-looking-for-partner-selected': selected3}" @click="selectWhatYouAreLookingFor(3)">EN HAN DER LEDER EFTER EN HUN</div>
+            <div class="btn-looking-for-partner" v-bind:class="{'btn-looking-for-partner-selected': selected4}" @click="selectWhatYouAreLookingFor(4)">EN HAN DER LEDER EFTER EN HAN</div>
+            <div>
+                <div @click="goToProfile" class="btn-go-to-profile">GÅ TIL DIN PROFIL</div>
             </div>
-        </div>
-        <div class="item3">
-            <div class="btn-leder-efter-en" v-bind:class="{'btn-leder-efter-en-selected': selected1}" @click="selectWhatYouAreLookingFor(1)">EN HUN DER LEDER EFTER EN HAN</div>
-            <div class="btn-leder-efter-en" v-bind:class="{'btn-leder-efter-en-selected': selected2}" @click="selectWhatYouAreLookingFor(2)">EN HUN DER LEDER EFTER EN HUN</div>
-            <div class="btn-leder-efter-en" v-bind:class="{'btn-leder-efter-en-selected': selected3}" @click="selectWhatYouAreLookingFor(3)">EN HAN DER LEDER EFTER EN HUN</div>
-            <div class="btn-leder-efter-en" v-bind:class="{'btn-leder-efter-en-selected': selected4}" @click="selectWhatYouAreLookingFor(4)">EN HAN DER LEDER EFTER EN HAN</div>
-        </div>
-        <div class="item4">
-            <div class="btn-center-btn-gaa-til-din-profil">
-                <div @click="goToProfile" class="btn-gaa-til-din-profil">GÅ TIL DIN PROFIL</div>
-            </div>
-        </div>
     </div>
 </template>
 
@@ -52,7 +43,7 @@ export default {
     methods: {
         goToProfile() {
             this.$router.push({
-                name: 'Profil',
+                name: 'Profile',
                 params: {
                     name: this.name,
                     age: this.age

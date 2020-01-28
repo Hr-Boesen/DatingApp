@@ -1,7 +1,7 @@
 
 .profile {
         
-    .btn-tag-foto-lav-sky {
+    .btn-take-a-photo{
         font-family: 'Montserrat';
         font-weight: 700;
         @include buttonSize(0); 
@@ -13,9 +13,12 @@
         padding: 4px 4px;
         background-color: $purpleLight;
         background-image: $gradient;
-        position: relative;
+        position: absolute;
         margin: 0 auto;
-        margin-top: 18vh;
+        margin: 18vh 20vw;
+    }
+    .position-btn-take-a-photo{
+        margin-top: 20vh;
     }
     
     .btn-lav-sky {
@@ -37,14 +40,7 @@
         z-index: 1;
     }
     
-    .headline-bruger-navn {
-        font-family: 'Montserrat';
-        font-weight: 600;
-        font-size: 2rem;
-    
-    }
-    
-    .tag-et-foto-wrapper {
+    .take-a-photo-wrapper {
         margin: 0 auto;
         margin-top: 5vh;
         width: 70vw;
@@ -52,7 +48,7 @@
         background: white;
     }
     
-    .tag-et-foto-inner-wrapper {
+    .take-a-photo-inner-wrapper{
         margin: 0 auto;
         margin-top: 1vh;
         width: 70vw;
@@ -77,14 +73,14 @@
         position: relative;
     }
     
-    .lav-sky-wrapper {
+    .create-cloud-wrapper{
         width: 80vw;
         height: 30vw;
         position: relative;
         margin: 0 auto;
     }
     
-    .sky1 {
+    .cloud1 {
         height: 1.3rem;
         
         width: 17.8vw;
@@ -95,7 +91,7 @@
         background: $greyBoxColor;
     }
     
-    .sky2 {
+    .cloud2 {
         
         width: 30vw;
         height: 2.6vh;
@@ -105,7 +101,7 @@
         background: $greyBoxColor;
     }
     
-    .sky3 {
+    .cloud3 {
         width: 24vw;
         height: 2.8vh;
         margin-top: 9.2vh;
@@ -114,7 +110,7 @@
         background: $greyBoxColor;
     }
     
-    .sky4 {
+    .cloud4 {
         width: 18vw;
         height: 2.9vw;
         margin-top: 12.9vh;
@@ -123,7 +119,7 @@
         background: $greyBoxColor;
     }
     
-    .sky5 {
+    .cloud5 {
         width: 31.5vw;
         height: 2.4vh;
         margin-top: 2.2vh;
@@ -132,7 +128,7 @@
         position: absolute;
     }
     
-    .sky6 {
+    .cloud6 {
         width: 41.5vw;
         height: 4.4vh;
         margin-top: 5.2vh;
@@ -141,7 +137,7 @@
         position: absolute;
     }
     
-    .sky7 {
+    .cloud7 {
         width: 33vw;
         height: 2.4vh;
         margin-top: 10vh;
@@ -150,7 +146,7 @@
         position: absolute;
     }
     
-    .profil-procent-overskrift {
+    .profile-percentage-title {
         font-family: 'Montserrat';
         font-weight: 700;
         font-size: 1rem;
@@ -159,7 +155,7 @@
         margin-bottom: .8vh;
     }
     
-    .profil-procent-grafik {
+    .profile-percentage-graphics {
         border-radius: 25px;
         height: 2.4vh;
         width: 72vw;
@@ -169,7 +165,7 @@
         margin: 0 auto;
     }
     
-    .profil-procent-grafik-bar {
+    .profile-percentage-graphics-bar {
         border-radius: 25px;
         height: 2.4vh;
         width: 16vw;
@@ -178,11 +174,11 @@
         margin: -4px -4px -4px -4px;
     }
     
-    .profil-procent-oversigt {
+    .profile-percentage-overview {
         margin-top: 4vh;
     }
     
-    .profil-procent-tilgaengelig {
+    .profile-percentage-not-public-yet {
         font-family: 'Montserrat';
         font-weight: 600;
         font-size: .7rem;

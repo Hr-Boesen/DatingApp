@@ -1,8 +1,8 @@
 <template>
     <div class="slider">
     
-        <router-link :to="{name: 'Profil'}">
-            <span class="tilbageKnap">
+        <router-link :to="{name: 'Profile'}">
+            <span class="btn-back">
                 <i class="fas fa-arrow-left"></i> TILBAGE
             </span>
             <span class="slidingWord">{{words[count]}}</span>
