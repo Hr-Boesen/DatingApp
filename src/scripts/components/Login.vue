@@ -1,15 +1,17 @@
 <template>
     <div class="screen login">
-        <h1 class="screen_title">VELKOMMEN</h1>
-        <h2 class="create-user">OPRET BRUGER</h2>
-        <div>
-            <router-link :to="{name: 'CreateProfileNameAgeSexuality'}" class="button button-block button-facebook">
-                Facebook
-            </router-link>
-            <br />
-            <router-link :to="{name: 'CreateProfileNameAgeSexuality'}" class="button button-block button-google">
-                Google
-            </router-link>
+        <div class="container">
+            <h1 class="screen_title">VELKOMMEN</h1>
+            <h2 class="create-user">OPRET BRUGER</h2>
+            <div>
+                <router-link :to="{name: 'CreateProfileNameAgeSexuality'}" class="button button-block button-facebook">
+                    Facebook
+                </router-link>
+                <br />
+                <router-link :to="{name: 'CreateProfileNameAgeSexuality'}" class="button button-block button-google">
+                    Google
+                </router-link>
+            </div>
         </div>
     </div>
 </template>
