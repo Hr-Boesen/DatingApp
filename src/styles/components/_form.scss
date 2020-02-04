@@ -1,0 +1,11 @@
+
+// Form
+
+.form {
+    .input,
+    .button {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}

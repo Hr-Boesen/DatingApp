@@ -1,13 +1,28 @@
 
+// Login
+
 .login {
-    padding: 80px 0;
-    
-    .create-user {
-        margin-bottom: 40px;
-        font-weight: 400;
-        letter-spacing: 4px;
+    padding: 60px 0;
+
+    &__title {
         text-align: center;
+        margin-bottom: 40px;
     }
-    
-    
+
+    &__form {
+        margin-bottom: 40px;
+    }
+
+    &__subtitle {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__socials {
+        display: flex;
+
+        .button:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
 }
