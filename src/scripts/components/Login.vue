@@ -6,19 +6,21 @@
             <form class="login__form form">
                 <base-input icon="fas fa-at" placeholder="user" type="email" required></base-input>
                 <base-input icon="fas fa-key" placeholder="password" type="password" required></base-input>
-                <button type="submit" class="button button--block">Log in</button>
-                <router-link to="/" class="button button--block button--border">Registration</router-link>
+                <button type="submit" class="button button--block button--primary">Log in</button>
+                <router-link to="/" class="button button--block button--border button--primary">Registration</router-link>
             </form>
             <h3 class="login__subtitle">LOGIN WITH</h3>
             <div class="login__socials">
-                <router-link :to="{name: 'CreateProfileNameAgeSexuality'}" class="button button--social button--facebook">
+                <router-link :to="{name: 'CreateProfileNameAgeSexuality'}"
+                    class="button button--social button--facebook">
                     <i class="fab fa-facebook"></i>
                 </router-link>
-                <br />
-                <router-link :to="{name: 'CreateProfileNameAgeSexuality'}" class="button button--social button--google">
+                <router-link :to="{name: 'CreateProfileNameAgeSexuality'}"
+                    class="button button--social button--google">
                     <i class="fab fa-google"></i>
                 </router-link>
-                <router-link :to="{name: 'CreateProfileNameAgeSexuality'}" class="button button--social button--twitter">
+                <router-link :to="{name: 'CreateProfileNameAgeSexuality'}"
+                    class="button button--social button--twitter">
                     <i class="fab fa-twitter"></i>
                 </router-link>
             </div>

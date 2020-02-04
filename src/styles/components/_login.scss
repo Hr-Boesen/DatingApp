@@ -20,9 +20,6 @@
 
     &__socials {
         display: flex;
-
-        .button:not(:last-child) {
-            margin-right: 20px;
-        }
+        justify-content: space-around;
     }
 }
