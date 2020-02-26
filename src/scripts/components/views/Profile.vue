@@ -1,12 +1,12 @@
 <template>
-    <base-view :title="name">
+    <base-view title="Profile">
         <div class="profile">
             <h1 class="screen_title">
-                {{ name }}
+                {{ user.name }}
             </h1>
             <div class="take-a-photo-wrapper">
                 <div class="take-a-photo-inner-wrapper">
-                <router-link :to="{name: 'TakeAFoto'}">
+                <router-link :to="{name: 'photo'}">
                     <span class="btn-take-a-photo">
                         <i class='fas fa-pen fa-cog'> </i> TAG ET FOTO
                     </span>
@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="create-cloud-wrapper">
-                <router-link :to="{name:'Slider'}">
+                <router-link :to="{name: 'slider'}">
                     <span class="btn-lav-sky">
                         <i class='fas fa-pen fa-cog'> </i> LAV DIN SKY
                     </span>
@@ -45,30 +45,15 @@
 </template>
 
 <script>
-import BaseView from './BaseView';
+import { mapState } from 'vuex';
 
 export default {
-    name: 'profil',
-    
-    components: {
-        BaseView
-    },
+    name: 'Profile',
 
-    data() {
-        return {
-            name: 'John Doe',
-            age: 18
-        }
+    computed: {
+        ...mapState([
+            'user'
+        ])
     },
-
-    methods: {
-        tagEtFoto() {
-    
-        }
-    },
-
-    created() {
-        console.log(this.name);
-    }
 }
 </script>

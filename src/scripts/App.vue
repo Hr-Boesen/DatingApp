@@ -3,11 +3,16 @@
         <aside class="app__nav">
             <div class="container">
                 <nav class="nav">
-                    <router-link class="nav__link" to="/">Feed</router-link>
-                    <router-link class="nav__link" to="/">Messages</router-link>
-                    <router-link class="nav__link" to="/">Search</router-link>
-                    <router-link class="nav__link" to="/">Account</router-link>
-                    <router-link class="nav__link" to="/">Log out</router-link>
+                    <!-- Not a user -->
+                    <router-link class="nav__link" v-if="!user" to="/login">Log in</router-link>
+                    <router-link class="nav__link" v-if="!user" to="/registration">Registration</router-link>
+                    <!-- User -->
+                    <router-link class="nav__link" v-if="user" to="/home">Feed</router-link>
+                    <router-link class="nav__link" v-if="user" to="/chats">Messages</router-link>
+                    <router-link class="nav__link" v-if="user" to="/profile">Profile</router-link>
+                    <router-link class="nav__link" v-if="user" to="/logout">Log out</router-link>
+                    <!-- Commot -->
+                    <router-link class="nav__link" to="/about">About</router-link>
                 </nav>
             </div>
         </aside>
@@ -22,6 +27,8 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
 export default {
     name: 'App',
 
@@ -29,6 +36,12 @@ export default {
         return {
             isNavOpen: false
         }
+    },
+
+    computed: {
+        ...mapState([
+            'user'
+        ])
     },
 
     methods: {

@@ -2,10 +2,10 @@
     <base-view title="New account">
         <div class="account">
             <!-- <h1 class="screen_title">HEJ!</h1> -->
-            <form class="account__details form">
+            <!-- <form class="account__details form">
                 <base-input icon="far fa-user" type="text" placeholder="name"></base-input>
                 <base-input icon="far fa-calendar" type="text" placeholder="age"></base-input>
-            </form>
+            </form> -->
             <div class="account__interest">
                 <button class="button button--block "
                     v-bind:class="{'button--gradient': interest === 1}"
@@ -49,15 +49,13 @@
 </template>
 
 <script>
-import BaseInput from './BaseInput';
-import BaseView from './BaseView';
+import BaseInput from '../common/BaseInput';
 
 export default {
     name: 'CreateProfileNameAgeSexuality',
 
     components: {
         BaseInput,
-        BaseView,
     },
 
     data() {
@@ -71,11 +69,7 @@ export default {
     methods: {
         goToProfile() {
             this.$router.push({
-                name: 'Profile',
-                params: {
-                    name: this.name,
-                    age: this.age
-                }
+                name: 'profile'
             })
         },
         // changeNameFocus() {
