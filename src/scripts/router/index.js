@@ -5,6 +5,8 @@ import Profil from '../components/profile'
 import TakeAPhoto from '../components/TakeAPhoto'
 import Slider from '../components/Slider'
 import CreateProfileNameAgeSexuality from '../components/CreateProfileNameAgeSexuality'
+import ChatContacts from '../components/ChatContacts'
+import Chat from '../components/Chat'
 
 Vue.use(Router)
 
@@ -37,6 +39,18 @@ export default new Router({
             name: 'Slider',
             props: true,
             component: Slider
+        }, 
+        {
+            path: '/chatcontacts',
+            name: 'ChatContacts',
+            props: true,
+            component: ChatContacts
+        },
+        {
+            path: '/chat',
+            name: 'Chat',
+            props: true,
+            component: Chat
         }
     ]
 })

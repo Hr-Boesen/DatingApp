@@ -89,3 +89,21 @@
     background-color: $twitter;
     color: white;
 }
+
+.btn-back {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    @include buttonSize(.26);
+    letter-spacing: 2px;
+    text-align: left;
+    color: white;
+    border-radius: 25px;
+    width: 31vw;
+    padding: 4px 4px;
+    margin: 4% 5.5%;
+    position: absolute;
+
+    &--black {
+    color: black; 
+    }
+}
