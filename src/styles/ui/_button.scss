@@ -36,7 +36,7 @@
 
 // Button colors
 
-.button.button--primary:not(.button--border):not(.button--link) {
+.button.button--primary {
     border-color: $primary;
     background-color: $primary;
     color: $white;
@@ -44,10 +44,13 @@
 
 .button--border.button--primary {
     border-color: $primary;
+    background-color: transparent;
     color: $primary;
 }
 
 .button--link.button--primary {
+    border-color: transparent;
+    background-color: transparent;
     color: $primary;
 }
 

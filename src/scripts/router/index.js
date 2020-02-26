@@ -1,7 +1,7 @@
 import Vue from 'vue/dist/vue.js'
 import Router from 'vue-router'
 import Login from '../components/Login'
-import Profil from '../components/profile'
+import Profile from '../components/profile'
 import TakeAPhoto from '../components/TakeAPhoto'
 import Slider from '../components/Slider'
 import CreateProfileNameAgeSexuality from '../components/CreateProfileNameAgeSexuality'
@@ -26,7 +26,7 @@ export default new Router({
             path: '/profile',
             name: 'Profile',
             props: true,
-            component: Profil
+            component: Profile
         }, 
         {
             path: '/takeaphoto',
