@@ -13,6 +13,7 @@ import CreateProfileNameAgeSexuality from '../components/views/CreateProfileName
 import Chats from '../components/views/Chats'
 import Chat from '../components/views/Chat'
 import About from '../components/views/About'
+import CreateYourProfile from '../components/views/CreateYourProfile'
 
 Vue.use(Router)
 
@@ -89,6 +90,11 @@ const routes = [
         path: '/about',
         name: 'about',
         component: About
+    }, 
+    {
+        path: '/createYourProfile',
+        name: 'CreateYourProfile',
+        component: CreateYourProfile
     }
 ];
 

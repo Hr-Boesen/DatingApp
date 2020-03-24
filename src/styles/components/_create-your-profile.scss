@@ -1,0 +1,43 @@
+
+.create-your-profile{
+
+.cube-img{
+    object-fit:cover;
+    max-width: 31vw;
+    
+}
+
+.center{
+    @include flexCenter();
+}
+
+.btn-grid{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 3%;
+}
+
+.btn-build{
+    padding: 3%;
+}
+
+.grid-container {
+    margin-top: -55vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2px;
+    padding: 4px;
+  }
+  .grid-item {
+    min-height: 16vh;
+    min-width: 31vw;
+    padding: 6px;
+    font-size: 5rem;
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+}
