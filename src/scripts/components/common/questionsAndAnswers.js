@@ -31,26 +31,6 @@ export const questionsBasic = [
         answer: null
     },
     {
-        id: 4,
-        question: "Where you born as boy?",
-        open: false,
-        cubeText: null,
-        likes: null,
-        color: "black",
-        imgURL: null,
-        answer: null
-    },
-    {
-        id: 5,
-        question: "Where you born as girl?",
-        open: false,
-        cubeText: null,
-        likes: null,
-        color: "black",
-        imgURL: null,
-        answer: null
-    },
-    {
         id: 6,
         question: "Are you interested in woman?",
         open: false,
@@ -76,33 +56,36 @@ export const questionsBasic = [
     export const questionsAndAnswers = [
     {
         id: 8,
-        question: "Are you mostly interested in sex?",
+        question: "Do you enjoy multiple sex partners?",
         open: false,
         cubeText: "sex machine",
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id: 9,
-        question: "Are you interested in sex and love?",
+        question: "Do you say no to one night stands",
         open: false,
-        cubeText: "sex and love hand in hand",
+        cubeText: "No go to one nights",
         likes: null,
         color: "black",
         imgURL: null,
-        answer: null
+        answer: null,
+        editMode: false
     },
     {
         id: 10,
-        question: "I am only interested in finding my soulmate",
+        question: "Are you looking for your soulmate here?",
         open: false,
         cubeText: "Looking for my soulmate",
         likes: null,
         color: "black",
         imgURL: null,
-        answer: null
+        answer: null,
+        editMode: false
     },
     {
         id: 11,
@@ -112,7 +95,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: null
+        answer: null,
+        editMode: false
     },
     {
         id: 12,
@@ -122,7 +106,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id: 13,
@@ -132,7 +117,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id: 14,
@@ -142,7 +128,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id: 15,
@@ -152,7 +139,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id: 16,
@@ -162,7 +150,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: null
+        answer: null,
+        editMode: false
     },
     {
         id: 17,
@@ -172,27 +161,30 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: "https://hr-boesen.github.io/Front-end-2/dating-app-test/IMG_2455.JPG",
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id: 18,
-        question: "Do you sometimes hold the door for a women",
+        question: "Do you pay when you invite a girl out",
         open: false,
-        cubeText: "Hold doors for women",
+        cubeText: "Gentleman",
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id: 19,
         question: "Are you a handy man?",
         open: false,
-        cubeText: "A handy man",
+        cubeText: "handy man",
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id: 20,
@@ -202,7 +194,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id: 21,
@@ -212,7 +205,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: "https://hr-boesen.github.io/Front-end-2/dating-app-test/IMG_2454.JPG",
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id: 22,
@@ -222,7 +216,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id: 23,
@@ -232,26 +227,29 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: null
+        answer: null,
+        editMode: false
     },
     {
         id: 24,
-        question: "Do you have normal body hair",
+        question: "I do NOT have a lot of body hair",
         open: false,
         cubeText: "Normal body hair",
         likes: null,
         color: "black",
         imgURL: null,
-        answer: null
+        answer: null,
+        editMode: false
     },
     {   id: 25,
-        question: "I do not have a lot of body hair",
+        question: "Is your shoe size under or equal to size 43",
         open: false,
-        cubeText: "Not much body hair",
+        cubeText: "Small feeds",
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id: 26,
@@ -261,17 +259,19 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: null
+        answer: null,
+        editMode: false
     },
     {
         id: 27,
-        question: "My favorite show are sandels",
+        question: "My favorite shoes are sandels",
         open: false,
         cubeText: "Love sandels",
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id: 28,
@@ -281,7 +281,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id: 29,
@@ -291,7 +292,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: "https://hr-boesen.github.io/Front-end-2/dating-app-test/IMG_2453.JPG",
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id: 30,
@@ -301,7 +303,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id:31,
@@ -311,7 +314,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id:32,
@@ -321,7 +325,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id:33,
@@ -331,7 +336,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id:34,
@@ -341,7 +347,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id:35,
@@ -351,7 +358,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id:36,
@@ -361,7 +369,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id:37,
@@ -371,7 +380,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id:38,
@@ -381,7 +391,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id:39,
@@ -391,7 +402,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id:40,
@@ -401,7 +413,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id:41,
@@ -411,7 +424,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id:42,
@@ -421,7 +435,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: "https://hr-boesen.github.io/Front-end-2/dating-app-test/IMG_2456.JPG",
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id:43,
@@ -431,7 +446,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id:44,
@@ -441,7 +457,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id:45,
@@ -451,7 +468,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id:46,
@@ -461,7 +479,8 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id:47,
@@ -471,27 +490,41 @@ export const questionsBasic = [
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id:48,
-        question: "Do you have well payed a job",
+        question: "Do you have an overaverage income",
         open: false,
-        cubeText: "Have a well payed job",
+        cubeText: "Well payed job",
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     {
         id:49,
+        question: "Do you have a high income",
+        open: false,
+        cubeText: "high income",
+        likes: null,
+        color: "black",
+        imgURL: null,
+        answer: "yes",
+        editMode: false
+    },
+    {
+        id:50,
         question: "Do you have a higher education",
         open: false,
         cubeText: "high educated",
         likes: null,
         color: "black",
         imgURL: null,
-        answer: "yes"
+        answer: "yes",
+        editMode: false
     },
     
  ]

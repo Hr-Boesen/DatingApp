@@ -32,12 +32,23 @@
     min-height: 16vh;
     min-width: 31vw;
     padding: 6px;
-    font-size: 5rem;
+    font-size: 1rem;
     text-align: center;
     display: flex; 
     justify-content: center;
     align-items: center;
     color: white;
+  }
+  input{
+    border:none; 
+    color: white;
+    font-size: 1rem;
+    font-family: "Montserrat";
+    line-height: 1.25;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    min-width: 95%;
   }
 
 }

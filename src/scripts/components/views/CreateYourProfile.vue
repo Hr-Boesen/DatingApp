@@ -24,14 +24,13 @@
                 <div class=" grid-container">
                    <div class="btn-grid"> <button v-if="count === -1" @click="changeView('buildCube')" class="button button--gradient">Test questions</button></div>
                     <div class="grid-item" v-for="cube in testCube" :key="cube.id"
-                     :style="{'background-color': cube.color}">
-                       <h3 v-if="cube.open == true">{{cube.cubeText}}</h3> 
-                       <h3 v-if="cube.open == false">{{cube.likes}}</h3>
+                     :style="{'background-color': cube.color}" @click="modifyCube(cube.id)" :id="'cubeIdItem' +cube.id">
+                       <h3 v-if="cube.open == true && cube.editMode == false" >{{cube.cubeText}}</h3> 
+                       <input v-if="cube.editMode == true" type="text" @keyup="editCube($event, cube.id)" :value="cube.cubeText" :style="{'background-color': cube.color}">
+                       <h3 v-if="cube.open == false && cube.editMode == false">{{cube.likes}}</h3>
                        <img class="cube-img" :src="cube.imgURL">
                     </div>
                 </div>
-                
-    
             </section>
     </div>
 </template>
@@ -55,6 +54,7 @@
                 questionsAndAnswers: questionsAndAnswers,
                 randomColorArray: randomColorArray,
                 testImages: testImages
+             
             }
         },
         methods: {
@@ -76,28 +76,56 @@
                     this.count = -1;
                     console.log(this.countMemory);
                 }else{
-                    this.count = this.countMemory;
-                    
+                    this.count = this.countMemory;   
                 }
     
+            }, 
+            modifyCube(id){
+                for(let cube of questionsAndAnswers){
+                    if(cube.id == id){
+                       cube.editMode = true;
+                    }else{
+                        cube.editMode = false; 
+                    }
+                }
+                 questionsAndAnswers.push({});
+                 questionsAndAnswers.pop({});
+                console.log(questionsAndAnswers)
+
+            }, 
+            editCube(event, id){
+
+                 for(let cube of questionsAndAnswers){
+                    if(cube.id == id){
+                       cube.cubeText = event.target.value;
+                    }
+                }
+                questionsAndAnswers.push({});
+                 questionsAndAnswers.pop({});
+
+            },
+            changeItemColorAndLikesRandom(){
+                return this.questionsAndAnswers.filter(item => {
+                    
+                    if(item.imgURL === null){
+                        item.color =  randomColorArray[Math.floor(Math.random() * 30)]
+                    }
+                     if(item.open === false && item.imgURL === null){
+                      
+                       if(item.id%3  === 0 ){
+                        item.likes = Math.floor(Math.random() * 20) 
+                       }
+                    }
+                       return (item);
+                })
             }
         },
         computed: {
             testCube() {
                 return this.questionsAndAnswers.filter(item => {
                     
-                    if(item.imgURL === null){
-                        item.color =  randomColorArray[Math.floor(Math.random() * 30)]
-                    }
                       if(item.id%2  === 0 ){
                         item.open = true;
-                    }
-
-                    if(item.open === false && item.imgURL === null){
-                      
-                       if(item.id%3  === 0 ){
-                        item.likes = Math.floor(Math.random() * 20) 
-                       }
                     }
                     return (item);
                 })
@@ -105,7 +133,7 @@
     
         }, 
         created(){
-            console.log(randomColorArray)
+            this.changeItemColorAndLikesRandom();
         }
     }
 </script>
