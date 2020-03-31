@@ -9,7 +9,7 @@
                     <!-- User -->
                     <router-link class="nav__link" v-if="user" to="/home">Feed</router-link>
                     <router-link class="nav__link" v-if="user" to="/chats">Messages</router-link>
-                    <router-link class="nav__link" v-if="user" to="/profile">Profile</router-link>
+                    <router-link class="nav__link" v-if="user" to="/createYourProfile">Profile</router-link>
                     <router-link class="nav__link" v-if="user" to="/logout">Log out</router-link>
                     <!-- Commot -->
                     <router-link class="nav__link" to="/about">About</router-link>
@@ -42,6 +42,16 @@ export default {
         ...mapState([
             'user'
         ])
+    },
+
+    watch: {
+        $route: {
+            deep: true,
+            immediate: true,
+            handler() {
+                this.isNavOpen = false;
+            }
+        }
     },
 
     methods: {

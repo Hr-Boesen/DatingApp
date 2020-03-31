@@ -1,5 +1,6 @@
 import Vue from 'vue/dist/vue.js'
 import Router from 'vue-router'
+import firebase from 'firebase'
 
 import store from '../store';
 
@@ -107,7 +108,7 @@ router.beforeEach((to, from, next) => {
                 next('/login');
             });
     }
-    if (to.meta.auth && !store.state.user) {
+    if (to.matched.some((record) => record.meta.auth) && !firebase.auth().currentUser) {
         next('/login');
     } else {
         next();

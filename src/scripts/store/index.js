@@ -1,5 +1,6 @@
 import Vue from 'vue/dist/vue.js'
 import Vuex from 'vuex';
+import firebase from 'firebase';
 
 Vue.use(Vuex)
 
@@ -35,30 +36,25 @@ const store = new Vuex.Store({
     },
     actions: {
         login({commit}, {email, password}) {
-            return new Promise((resolve, reject) => {
-                commit('setUser', {
-                    name: '@pussy_1954',
-                    email,
-                    password
-                });
-                resolve();
-            })
+            const req = firebase.auth().signInWithEmailAndPassword(email, password);
+            req.then((user) => {
+                commit('setUser', user);
+            });
+            return req;
         },
-        registration({commit}, {name, email, password}) {
-            return new Promise((resolve, reject) => {
-                commit('setUser', {
-                    name,
-                    email,
-                    password
-                });
-                resolve();
-            })
+        registration({commit}, {email, password}) {
+            const req = firebase.auth().createUserWithEmailAndPassword(email, password);
+            req.then((user) => {
+                commit('setUser', user);
+            });
+            return req;
         },
         logout({commit}) {
-            return new Promise((resolve, reject) => {
+            const req = firebase.auth().signOut();
+            req.then(() => {
                 commit('setUser', null);
-                resolve();
-            })
+            });
+            return req;
         }
     }
 });

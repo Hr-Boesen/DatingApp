@@ -1,38 +1,45 @@
 <template>
-    <div class="create-your-profile">
-        <base-view title="Profile test">
-        </base-view>
-        <div class="btn-build">
-        <button v-if="count !== -1" @click="changeView('yourCube')" class="button button--gradient">Test Cube</button>
-        </div>
-        <div class="center">
-            <section v-if="count === 0">
-                <input v-model="age" class="input__field" type="number" placeholder="Enter your age">
-                <br>
-                <button @click="firstQuestion()" class="button button--gradient">save</button>
-            </section>
-            <section v-if="count !== 0 && count !== -1">
-                <h3>{{this.questionsAndAnswersAll[this.count].question}}</h3>
-                <br>
-                <button @click="nextQuestion('yes')" class="button button--gradient">yes</button>
-                <button @click="nextQuestion('no')" class="button button--gradient">no</button>
-            </section>
-        </div>
+    <base-view title="Profile test">
+        <div class="create-your-profile">
+            <div class="btn-build">
+                <button v-if="count !== -1" @click="changeView('yourCube')" class="button button--gradient">Test Cube</button>
+            </div>
 
-          <section v-if="count === -1">
-                
+            <div class="center">
+                <section v-if="count === 0">
+                    <input v-model="age" class="input__field" type="number" placeholder="Enter your age">
+                    <br>
+                    <button @click="firstQuestion()" class="button button--gradient">save</button>
+                </section>
+                <section v-if="count !== 0 && count !== -1">
+                    <h3>{{this.questionsAndAnswersAll[this.count].question}}</h3>
+                    <br>
+                    <button @click="nextQuestion('yes')" class="button button--gradient">yes</button>
+                    <button @click="nextQuestion('no')" class="button button--gradient">no</button>
+                </section>
+            </div>
+
+            <section v-if="count === -1">
                 <div class=" grid-container">
-                   <div class="btn-grid"> <button v-if="count === -1" @click="changeView('buildCube')" class="button button--gradient">Test questions</button></div>
+                    <div class="btn-grid"> <button v-if="count === -1" @click="changeView('buildCube')" class="button button--gradient">Test questions</button></div>
                     <div class="grid-item" v-for="cube in testCube" :key="cube.id"
+<<<<<<< HEAD
                      :style="{'background-color': cube.color}" @click="modifyCube(cube.id)" :id="'cubeIdItem' +cube.id">
                        <h3 v-if="cube.open == true && cube.editMode == false" >{{cube.cubeText}}</h3> 
                        <input v-if="cube.editMode == true" type="text" @keyup="editCube($event, cube.id)" :value="cube.cubeText" :style="{'background-color': cube.color}">
                        <h3 v-if="cube.open == false && cube.editMode == false">{{cube.likes}}</h3>
                        <img class="cube-img" :src="cube.imgURL">
+=======
+                        :style="{'background-color': cube.color}">
+                        <h3 v-if="cube.open == true">{{cube.cubeText}}</h3> 
+                        <h3 v-if="cube.open == false">{{cube.likes}}</h3>
+                        <img class="cube-img" :src="cube.imgURL">
+>>>>>>> master
                     </div>
                 </div>
             </section>
-    </div>
+        </div>
+    </base-view>
 </template>
 
 <script>
